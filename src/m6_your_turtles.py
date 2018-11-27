@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and John Neill.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -28,3 +28,76 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+
+anatoli = rg.SimpleTurtle()
+ivan = rg.SimpleTurtle()
+boris = rg.SimpleTurtle()
+redpen = rg.Pen('red', 5000)
+yellowpen = rg.Pen('yellow', 10)
+
+anatoli.pen = redpen
+anatoli.forward(1)
+
+ivan.pen = yellowpen
+ivan.left(120)
+ivan.forward(200)
+ivan.right(90)
+ivan.forward(60)
+ivan.left(130)
+ivan.forward(100)
+ivan.left(50)
+ivan.forward(100)
+ivan.left(90)
+ivan.forward(60)
+ivan.left(90)
+ivan.forward(40)
+ivan.right(90)
+ivan.forward(300)
+ivan.left(90)
+ivan.forward(65)
+ivan.left(90)
+ivan.forward(100)
+
+boris.pen = yellowpen
+boris.left(120)
+boris.forward(40)
+boris.right(120)
+
+for k in range(22):
+    boris.left(4.25)
+    boris.forward(k)
+
+boris.right(300)
+
+for k in range(26):
+    boris.right(4.5)
+    boris.backward(k)
+
+for k in range(23):
+    boris.right(3.15)
+    boris.backward(k)
+
+
+boris.right(90)
+boris.forward(60)
+boris.right(90)
+boris.forward(40)
+boris.right(90)
+boris.forward(120)
+boris.right(120)
+
+for k in range(19):
+    boris.left(2.5)
+    boris.forward(k)
+
+
+for k in range(17):
+    boris.left(3.3)
+    boris.forward(k)
+
+
+window.close_on_mouse_click()
