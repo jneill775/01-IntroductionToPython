@@ -67,13 +67,13 @@ boris.left(120)
 boris.forward(40)
 boris.right(120)
 
-for k in range(22):
+for k in range(24):
     boris.left(4.25)
     boris.forward(k)
 
 boris.right(300)
 
-for k in range(26):
+for k in range(28):
     boris.right(4.5)
     boris.backward(k)
 
@@ -96,7 +96,7 @@ for k in range(19):
 
 
 for k in range(17):
-    boris.left(3.3)
+    boris.left(3.6)
     boris.forward(k)
 
 
