@@ -11,7 +11,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Write code that accomplishes the following (and ONLY the following),
 #   in the order listed:
 #
@@ -54,8 +54,8 @@ greenPen = rg.Pen('green', 10)
 
 dimitri.pen = bluePen
 dimitri.left(90)
-dimitri.pen_up()
 dimitri.forward(200)
+dimitri.pen_up()
 dimitri.right(90)
 dimitri.forward(100)
 dimitri.right(90)
